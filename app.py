@@ -39,8 +39,14 @@ st.caption(
 )
 
 if not DATA.exists():
-    st.error("data/dataset.csv not found. Run generate_dataset.py first.")
-    st.stop()
+    with st.spinner("Dataset not found. Generating data/dataset.csv..."):
+        try:
+            import subprocess
+            import sys
+            subprocess.run([sys.executable, "generate_dataset.py"], check=True)
+        except Exception as e:
+            st.error(f"data/dataset.csv not found and auto-generation failed: {e}")
+            st.stop()
 
 # ── Load and validate data ────────────────────────────────────────────────────
 df = pd.read_csv(DATA, parse_dates=["date"])

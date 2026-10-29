@@ -18,14 +18,11 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# ── Generated dataset (reproducible via `python generate_dataset.py`) ─────────
-# The original source file (dataset_original.csv) IS committed.
-# The 5000-row working dataset is regenerated on each run.
-data/dataset.csv
+# ── Generated dataset (committed for 1-click cloud deployment) ───────────────
+# data/dataset.csv
 
-# ── Trained model binary (regenerable via `python -m src.forecast_model`) ─────
-# ~3 MB binary; re-run the script to recreate it.
-models/best_model.joblib
+# ── Trained model binary (committed for 1-click cloud deployment) ─────────────
+# models/best_model.joblib
 
 # ── Streamlit runtime files ───────────────────────────────────────────────────
 .streamlit/
