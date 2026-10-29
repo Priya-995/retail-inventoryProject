@@ -1,0 +1,10 @@
+experiment,MAE,RMSE,WAPE_pct,R2,note
+B0_GlobalMean,9.2256,11.8999,53.4971,-0.0173,Predicts the single training-set mean for every record.
+B1_CategoryMean,7.5502,9.7051,43.7819,0.3234,Predicts the per-category training mean for each record.
+B2_CategoryMean_x_SeasonMult,8.2532,10.5904,47.8584,0.1943,Category train mean scaled by per-season multiplier (both from train only).
+E1_RF_OrigFeatures,7.8371,10.3507,45.4452,0.2303,RF200 with raw prod_mean_sales + prod_record_count from train.
+E2_RF_NoProductStats (ablation),7.5531,10.0051,43.7984,0.2809,Ablation: RF200 with no prod_mean_sales or prod_record_count.
+E3_RF_ShrunkMean,7.7953,10.2875,45.2028,0.2397,"RF200 with shrunk product mean (n*mu_p + 5*mu_c)/(n+5), train only."
+"E4_RF_Tuned(n=400,d=6,leaf=10)",7.4837,9.9489,43.396,0.2889,"RF tuned on internal val split: n_estimators=400, max_depth=6, min_samples_leaf=10. Val MAE=6.9667."
+E5_HistGB_Poisson,7.9538,10.577,46.1222,0.1963,HistGradientBoosting with loss=poisson; shrunk product mean features.
+E6_Ridge_ShrunkFeatures,7.7459,10.2536,44.9163,0.2447,Ridge regression with shrunk product mean features.

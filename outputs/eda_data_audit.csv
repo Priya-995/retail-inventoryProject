@@ -1,0 +1,11 @@
+,dtype,missing_count,unique_count
+date,datetime64[us],0,366
+product_id,str,0,500
+category,str,0,4
+season,str,0,4
+stock_qty,int64,0,636
+reorder_level,int64,0,81
+daily_sales,int64,0,73
+unit_cost,float64,0,500
+supplier_id,str,0,30
+lead_days,int64,0,19

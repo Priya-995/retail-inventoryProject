@@ -1,0 +1,2 @@
+target,model,train_days,test_days,MAE,RMSE,WAPE_percent,warning
+aggregate daily recorded sales,training-period mean baseline,292,74,66.32839689004074,82.52907880427954,31.00436719008916,"Synthetic/combined data; aggregate-level baseline only, not per-product validation."

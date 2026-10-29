@@ -1,0 +1,11 @@
+column_name,data_type,sample_value_1,sample_value_2,sample_value_3,nullable,description_fill_in
+date,object/numeric,2024-01-01,2024-01-01,2024-01-01,No,date — [Learner to fill in description]
+product_id,object/numeric,SKU0487,SKU0302,SKU0477,No,product_id — [Learner to fill in description]
+category,object/numeric,Grocery,Electronics,Grocery,No,category — [Learner to fill in description]
+season,object/numeric,Winter,Winter,Winter,No,season — [Learner to fill in description]
+stock_qty,object/numeric,457,375,241,No,stock_qty — [Learner to fill in description]
+reorder_level,object/numeric,65,87,78,No,reorder_level — [Learner to fill in description]
+daily_sales,object/numeric,27,41,48,No,daily_sales — [Learner to fill in description]
+unit_cost,object/numeric,2753.14,3815.85,4671.35,No,unit_cost — [Learner to fill in description]
+supplier_id,object/numeric,SUP11,SUP02,SUP09,No,supplier_id — [Learner to fill in description]
+lead_days,object/numeric,21,10,21,No,lead_days — [Learner to fill in description]

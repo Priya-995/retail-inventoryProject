@@ -1,0 +1,93 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# .gitignore — Optimized Retail Inventory Management System
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+.venv-clean/
+venv/
+env/
+ENV/
+
+# ── Python bytecode & caches ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Generated dataset (reproducible via `python generate_dataset.py`) ─────────
+# The original source file (dataset_original.csv) IS committed.
+# The 5000-row working dataset is regenerated on each run.
+data/dataset.csv
+
+# ── Trained model binary (regenerable via `python -m src.forecast_model`) ─────
+# ~3 MB binary; re-run the script to recreate it.
+models/best_model.joblib
+
+# ── Streamlit runtime files ───────────────────────────────────────────────────
+.streamlit/
+
+# ── Jupyter / IPython ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Distribution / packaging ──────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# ── Environment / secrets ────────────────────────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
+
+# ── OS-generated files ────────────────────────────────────────────────────────
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+# ── IDE / editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sublime-project
+*.sublime-workspace
+
+# ── Logs & temp ───────────────────────────────────────────────────────────────
+*.log
+tmp/
+temp/
+.tmp/
+
+# ── What IS committed (for reference) ────────────────────────────────────────
+# data/dataset_original.csv      — original source (never modified)
+# data/dataset_validation.json   — audit report from generate_dataset.py
+# data/data_dictionary.csv       — column descriptions
+# data/data_dictionary_original.csv
+# outputs/                       — EDA charts, baseline & model metrics CSVs,
+#                                  prediction CSVs, run_log.md, ai_disclosure.md
+# src/__init__.py, src/eda.py, src/forecast_baseline.py, src/forecast_model.py
+# app.py, generate_dataset.py, requirements.txt, README.md
+

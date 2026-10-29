@@ -1,0 +1,15 @@
+{
+  "original_rows":500,
+  "retained_original_rows_after_deduplication":488,
+  "generated_rows":4512,
+  "total_rows":5000,
+  "unique_products":500,
+  "unique_dates":366,
+  "date_min":"2024-01-01 00:00:00",
+  "date_max":"2024-12-31 00:00:00",
+  "columns_match_expected":true,
+  "missing_cells":0,
+  "duplicate_date_product_pairs":0,
+  "metadata_rule":"Mode for category\/supplier; median for cost\/reorder level\/lead days. Missing product metadata is generated synthetically.",
+  "note":"Synthetic data is illustrative. The source file is preserved. Duplicate source date\/product pairs were reduced to one row in the working dataset. Seasonal multipliers are assumptions, not measured real-world effects."
+}
